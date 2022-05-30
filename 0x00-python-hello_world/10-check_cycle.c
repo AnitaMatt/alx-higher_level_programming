@@ -21,7 +21,7 @@ int check_cycle(listint_t *list)
 			break;
 		n++;
 	}
-	if (temp == head && n > 1)
+	if (temp == head && n >= 1)
 		return (1);
 	return (0);
 }
