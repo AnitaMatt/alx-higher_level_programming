@@ -19,7 +19,7 @@ listint_t *insert_node(listint_t **head, int number){
 	new->next = NULL;
 
 	if (*head == NULL)
-		*head == new;
+		*head = new;
 	temp = *head;
 	while (temp)
 	{
