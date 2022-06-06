@@ -11,7 +11,7 @@
 int is_palindrome(listint_t **head)
 {
 	listint_t *temp = *head;
-	int *my_array;
+	long int *my_array;
 	int i, n, flag = 0;
 
 	if (temp == NULL)
