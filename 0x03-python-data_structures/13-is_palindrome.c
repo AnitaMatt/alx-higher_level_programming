@@ -31,24 +31,18 @@ int is_palindrome(listint_t **head)
 		i++;
 	}
 	if (n % 2 == 0)
-	{
-		for (i = 0; i < ((n / 2) - 1); i++)
-		{
-			if (my_array[i] == my_array[n - 1])
-				flag++;
-		}
-	}
+		n = n / 2;
 	else
 	{
-		flag = 1;
-		for (i = 0; i < (n / 2); i++)
-		{
-			if (my_array[i] == my_array[n - 1])
-				flag++;
-		}
+		n = n / 2 - 1;
+	}
+	for (i = 0; i < n; i++)
+	{
+		if (my_array[i] == my_array[n - 1])
+			flag++;
 	}
 	free(my_array);
-	if (flag == (n / 2 - 1))
+	if (flag == i)
 		return (1);
 	else
 		return (0);
