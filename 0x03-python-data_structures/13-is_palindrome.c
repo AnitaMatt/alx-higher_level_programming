@@ -16,14 +16,14 @@ int is_palindrome(listint_t **head)
 
 	if (temp == NULL)
 		return (1);
-	if (temp->next == NULL)
-		return (0);
 	while (temp != NULL)
 	{
 		temp = temp->next;
 		n++;
 	}
-	my_array = malloc(n * sizeof(int));
+	if (n == 1)
+		return (0);
+	my_array = malloc(n * sizeof(long int));
 	while (temp != NULL && i < n)
 	{
 		my_array[i] = temp->n;
