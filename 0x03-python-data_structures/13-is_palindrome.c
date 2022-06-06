@@ -16,13 +16,13 @@ int is_palindrome(listint_t **head)
 
 	if (temp == NULL)
 		return (1);
+	if (temp->next == NULL)
+		return (0);
 	while (temp != NULL)
 	{
 		temp = temp->next;
 		n++;
 	}
-	if (n == 1)
-		return (0);
 	my_array = malloc(n * sizeof(int));
 	while (temp != NULL && i < n)
 	{
