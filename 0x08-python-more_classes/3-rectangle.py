@@ -56,4 +56,5 @@ class Rectangle:
             for j in range(self.__width):
                 display += "#"
             display += "\n"
+        display = display[:-1]
         return display
