@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """  This defines a rectangle based on 5-rectangle.py"""
+    """  This defines a rectangle based on 6-rectangle.py"""
     number_of_instances = 0
     print_symbol = "#"
 
