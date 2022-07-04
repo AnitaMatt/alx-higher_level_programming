@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """  This defines a rectangle based on 0-rectangle.py"""
+    """  This defines a rectangle based on 1-rectangle.py"""
     def __init__(self, width=0, height=0):
         """ initializing with a width and height"""
         self.width = width
