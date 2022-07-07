@@ -1,0 +1,37 @@
+The ``7-base_geometry`` module
+============================
+
+Using ``integer_validator``
+---------------------
+
+This is a 7-base_geometry text file in reStructuredText format. First import
+``BaseGeometry`` class from the ``7-base_geometry`` module:
+
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Now use it:
+
+    >>> bg = BaseGeometry()
+
+    >>> bg.integer_validator("my_int", 12)
+
+
+    >>> bg.integer_validator("age", 0)
+    Traceback (most recent call last):
+    ...
+    ValueError: age must be greater than 0
+
+    >>> bg.integer_validator("name", "john")
+    Traceback (most recent call last):
+    ...
+    TypeError: name must be an integer
+
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+    >>> bg.integer_validator("femi")
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
