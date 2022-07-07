@@ -1,4 +1,4 @@
-#!/usr/bin/pythons3
+#!/usr/bin/python3
 """ creating a square class from rectangle"""
 Rectangle = __import__('9-rectangle').Rectangle
 
