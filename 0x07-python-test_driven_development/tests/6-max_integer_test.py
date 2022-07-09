@@ -24,6 +24,11 @@ class TestMaxInteger(unittest.TestCase):
         max_at_begin = [10, 5, 2, 1]
         self.assertEqual(max_integer(max_at_begin), 10)
 
+    def test_negative_numbers(self):
+        """ A list with negative numbers"""
+        neg_list = [-7, -2, -3, -4]
+        self.assertEqual(max_integer(neg_list), -2)
+
     def test_empty_list(self):
         """ An empty list"""
         empty = []
