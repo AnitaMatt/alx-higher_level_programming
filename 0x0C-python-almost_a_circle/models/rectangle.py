@@ -19,9 +19,10 @@ class Rectangle(Base):
 
     def __str__(self):
         """returns the string representation"""
-        return "[{}] ({}) {:d}/{:d} - {:d}/{:d}".format(self.__class__.__name__,
-                                                       self.id, self.x, self.y,
-                                                       self.width, self.height)
+        return "[{}] ({}) {:d}/{:d} - {:d}/{:d}".format(
+            self.__class__.__name__,
+            self.id, self.x, self.y,
+            self.width, self.height)
 
     def display(self):
         """return the rectangle with # characters display"""
