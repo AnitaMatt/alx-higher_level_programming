@@ -17,6 +17,12 @@ class Rectangle(Base):
         """returns the area of the rectangle"""
         return self.__width * self.__height
 
+    def __str__(self):
+        """returns the string representation"""
+        return "[{}] ({}) {:d}/{:d} - {:d}/{:d}".format(self.__class__.__name__,
+                                                       self.id, self.x, self.y,
+                                                       self.width, self.height)
+
     def display(self):
         """return the rectangle with # characters display"""
         if self.height == 0 or self.width == 0:
