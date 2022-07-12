@@ -13,6 +13,10 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
+    def area(self):
+        """returns the area of the rectangle"""
+        return self.__width * self.__height
+
     @property
     def width(self):
         """retrieves the value of width"""
