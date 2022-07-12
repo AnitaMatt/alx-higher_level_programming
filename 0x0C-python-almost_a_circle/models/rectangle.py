@@ -29,10 +29,11 @@ class Rectangle(Base):
         if self.height == 0 or self.width == 0:
             print("", end="")
             return show
-        for i in range(self.height):
-            for j in range(self.width):
-                print("#", end="")
-            print()
+        [print("") for y in range(self.y)]
+        for h in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for w in range(self.width)]
+            print("")
 
     @property
     def width(self):
