@@ -17,6 +17,16 @@ class Rectangle(Base):
         """returns the area of the rectangle"""
         return self.__width * self.__height
 
+    def display(self):
+        """return the rectangle with # characters display"""
+        if self.height == 0 or self.width == 0:
+            print("", end="")
+            return show
+        for i in range(self.height):
+            for j in range(self.width):
+                print("#", end="")
+            print()
+
     @property
     def width(self):
         """retrieves the value of width"""
