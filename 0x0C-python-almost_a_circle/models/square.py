@@ -19,6 +19,15 @@ class Square(Rectangle):
             for k, v in kwargs.items():
                 setattr(self, k, v)
 
+    def to_dictionary(self):
+        """returns the dictionary representation"""
+        list_atr = ['id', 'size', 'x', 'y']
+        ret_dict = {}
+
+        for k in list_atr:
+            ret_dict[k] = getattr(self, k)
+        return ret_dict
+
     @property
     def size(self):
         """returns the size"""
