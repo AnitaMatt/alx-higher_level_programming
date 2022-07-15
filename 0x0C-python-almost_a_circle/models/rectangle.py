@@ -34,6 +34,15 @@ class Rectangle(Base):
             for k, v in kwargs.items():
                 setattr(self, k, v)
 
+    def to_dictionary(self):
+        """returns the dictionary representation"""
+        list_atr = ['id', 'width', 'height', 'x', 'y']
+        ret_dict = {}
+
+        for k in list_atr:
+            ret_dict[k] = getattr(self, k)
+        return ret_dict
+
     def display(self):
         """return the rectangle with # characters display"""
         if self.height == 0 or self.width == 0:
