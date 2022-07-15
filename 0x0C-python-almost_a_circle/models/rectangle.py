@@ -24,6 +24,10 @@ class Rectangle(Base):
             self.id, self.x, self.y,
             self.width, self.height)
 
+    def update(self, *args):
+        """updating arguments passed"""
+        
+
     def display(self):
         """return the rectangle with # characters display"""
         if self.height == 0 or self.width == 0:
