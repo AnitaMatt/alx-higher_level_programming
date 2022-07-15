@@ -9,6 +9,16 @@ class Square(Rectangle):
         """call the super method and initiaize"""
         super().__init__(size, size, x, y, id)
 
+    def update(self, *args, **kwargs):
+        """updatess the square class"""
+        if args is not None and len(args) != 0:
+            list_args = ['id', 'size', 'x', 'y']
+            for i in range(len(args)):
+                setattr(self, list_args[i], args[i])
+        else:
+            for k, v in kwargs.items():
+                setattr(self, k, v)
+
     @property
     def size(self):
         """returns the size"""
