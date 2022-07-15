@@ -26,7 +26,10 @@ class Rectangle(Base):
 
     def update(self, *args):
         """updating arguments passed"""
-        
+        if args is not None:
+            list_args = ['id', 'width', 'height', 'x', 'y']
+            for i in range(len(args)):
+                setattr(self, list_args[i], args[i])
 
     def display(self):
         """return the rectangle with # characters display"""
