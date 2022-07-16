@@ -41,6 +41,19 @@ class Base:
             return dummy
 
     @classmethod
+    def load_from_file(cls):
+        """return a list of instance after reading a json file"""
+        filename = cls.__name__ + ".json"
+
+        try:
+            with open(filename, encoding="utf-8") as jfile:
+                """this reads a json file and turns it to python"""
+                list_dicts = Base.from_json_string(jfile.read())
+                return [cls.create(**dicts) for dicts in list_dicts]
+        except IOError:
+            return []
+
+    @classmethod
     def save_to_file(cls, list_objs):
         """saving to a file"""
         filename = cls.__name__ + ".json"
