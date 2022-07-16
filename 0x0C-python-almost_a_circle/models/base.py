@@ -34,7 +34,7 @@ class Base:
         """creates a new instance from a dictionary"""
         if dictionary != {}:
             if cls.__name__ == "Rectangle":
-                dummy = cls(1,1)
+                dummy = cls(1, 1)
             else:
                 dummy = cls(1)
             dummy.update(**dictionary)
