@@ -50,6 +50,6 @@ class Square:
         else:
             [print("", end="\n") for i in range(yPos)]
             for i in range(sizes):
-                [print("_", end="") for i in range(xPos)]
+                [print(" ", end="") for i in range(xPos)]
                 [print("#", end="") for i in range(sizes)]
                 print()
