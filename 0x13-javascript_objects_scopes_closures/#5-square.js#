@@ -1,8 +1,0 @@
-#!/usr/bin/node
-class Square extends Rectangle {
-  constructor (size) {
-    this.size = size;
-  }
-  super(length, length)
-}
-module.expor
