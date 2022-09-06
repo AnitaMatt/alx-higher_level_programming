@@ -10,6 +10,9 @@ if (args.length < 4) {
       second = largest;
       largest = parseInt(args[i]);
     } else {
+      if (second > parseInt(args[i]) && second < largest) {
+        continue;
+      }
       second = parseInt(args[i]);
     }
   }
