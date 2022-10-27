@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""post an email"""
+"""post an email
+"""
 
 import urllib.request
 import urllib.parse
