@@ -3,7 +3,7 @@
 
 import urllib.request
 
-url ="https://alx-intranet.hbtn.io/status"
+url = "https://alx-intranet.hbtn.io/status"
 req = urllib.request.Request(url)
 
 with urllib.request.urlopen(req) as res:
