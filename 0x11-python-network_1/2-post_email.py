@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""post an email
+"""Make a POST request
 """
 
 import urllib.request
