@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""sends a post request with request package"""
+"""using header"""
 
 import requests
 import sys
+
 if __name__ = '__main__':
     url = sys.argv[1]
 
