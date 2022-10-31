@@ -8,8 +8,6 @@ import urllib.error
 if __name__ == '__main':
     url = sys.argv[1]
 
-    //req = urllib.request.Request(url)
-
     try:
         with urllib.request.urlopen(url) as res:
             print(res.read().decode('utf-8'))
