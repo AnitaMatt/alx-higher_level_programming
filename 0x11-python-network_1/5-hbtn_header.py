@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-"""request headers"""
+"""Retrieve header with requests module
+"""
 
 import requests
-import sys
+from sys import argv
 
-if __name__ = '__main__':
-    url = sys.argv[1]
 
-    res = requests.get(url)
-    r = res.headers
+if __name__ == '__main__':
+    url = argv[1]
+    r = requests.get(url)
+    r = r.headers
     print(r.get('X-Request-Id'))
