@@ -3,16 +3,19 @@
 """
 
 import urllib.request
-import urllib.parse
-import sys
+from sys import argv
 
-value = {'email':  sys.argv[2]}
+if __name__ == '__main__':
+    url = argv[1]
+    email = {'email': argv[2]}
 
-data = urllib.parse.urlencode(value)
+    email = urllib.parse.urlencode(email)
+    email = email.encode('utf-8')
 
-data = data.encode('ascii')
+    # make request object
+    request = urllib.request.Request(url, email)
 
-req = urllib.request.Request(sys.argv[1], data)
-
-with urllib.request.urlopen(req) as res:
-    print(res.read().decode('utf-8'))
+    with urllib.request.urlopen(request) as response:
+        response = response.read()
+        response = response.decode('utf-8')
+        print(response)
