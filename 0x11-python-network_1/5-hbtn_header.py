@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""sends a post request with request package
+"""
+sends a post request with request package
 """
 
 import requests
