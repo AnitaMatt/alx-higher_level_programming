@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""using header"""
+"""request headers"""
 
 import requests
 import sys
