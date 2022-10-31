@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Make a POST request
 """
 
