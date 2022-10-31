@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""POst an email"""
+"""Make a POST request
+"""
 
 import sys
 import requests
