@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-"""make a post request """
+"""Make a POST request
+"""
 
 import urllib.request
 import urllib.parse
